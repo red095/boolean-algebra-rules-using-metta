@@ -1,7 +1,7 @@
 (: and-associative (-> Atom Atom))
 (: or-associative (-> Atom Atom))
 
-; AND Associative Law with recursion and case
+; AND Associative Law
 (= (and-associative $expr)
    (case $expr
      ( ((AND $A (AND $B $C)) (AND (AND $A $B) (and-associative $C)))
@@ -10,7 +10,7 @@
    )
 )
 
-; OR Associative Law with recursion and case
+; OR Associative Law 
 (= (or-associative $expr)
    (case $expr
      ( ((OR $A (OR $B $C)) (OR (OR $A $B) (or-associative $C)))

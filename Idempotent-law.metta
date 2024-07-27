@@ -1,6 +1,6 @@
 (: idempotent (-> Atom Atom))
 
-; Apply the Idempotent Law
+
 (= (idempotent $expr)
    (case $expr
      ; If the expression is AND A A, simplify to A

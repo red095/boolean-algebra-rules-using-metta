@@ -1,7 +1,7 @@
 (: or-absorption (-> Atom Atom))
 (: and-absorption (-> Atom Atom))
 
-; OR Absorption Law with recursion and case
+; OR Absorption Law 
 (= (or-absorption $expr)
    (case $expr
      ( ((OR $A (AND $A $B)) $A)
@@ -11,7 +11,7 @@
    )
 )
 
-; AND Absorption Law with recursion and case
+; AND Absorption Law 
 (= (and-absorption $expr)
    (case $expr
      ( ((AND $A (OR $A $B)) $A)
@@ -21,7 +21,7 @@
    )
 )
 
-; Simplify expressions by applying both or-absorption and and-absorption recursively
+; Simplifing expressions
 (: simplify (-> Atom Atom))
 (= (simplify $expr)
    (case $expr

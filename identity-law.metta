@@ -1,7 +1,7 @@
 (: and-identity (-> Atom Atom))
 (: or-identity (-> Atom Atom))
 
-; AND Identity Law with recursion and case
+; AND Identity Law 
 (= (and-identity $expr)
    (case $expr
      ( ((AND $A true) $A)
@@ -12,7 +12,7 @@
    )
 )
 
-; OR Identity Law with recursion and case
+; OR Identity Law
 (= (or-identity $expr)
    (case $expr
      ( ((OR $A false) $A)

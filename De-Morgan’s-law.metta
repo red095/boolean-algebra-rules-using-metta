@@ -1,6 +1,6 @@
 (: de-morgan (-> Atom Atom))
 
-; Recursive application of De Morgan's Laws
+
 (= (de-morgan $expr)
    (case $expr
      ; Apply De Morgan's Law for NOT over AND
@@ -22,4 +22,4 @@
 ; Example usage
 ! (test-de-morgan (NOT (AND A B))) ; Expected: (OR (NOT A) (NOT B))
 ! (test-de-morgan (NOT (OR A B))) ; Expected: (AND (NOT A) (NOT B))
-; Expected: (NOT (NOT A)) which should simplify to A
+

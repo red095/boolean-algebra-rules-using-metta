@@ -1,6 +1,6 @@
 (: complement-law (-> Atom Atom))
 
-; Recursive application of the Complement Law
+
 (= (complement-law $expr)
    (case $expr
      ; Apply Complement Law for AND

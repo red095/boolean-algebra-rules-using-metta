@@ -1,6 +1,6 @@
 (: distributive (-> Atom Atom))
 
-; Apply the Distributive Law
+
 (= (distributive $expr)
    (case $expr
      ; Apply the distributive law for AND over OR

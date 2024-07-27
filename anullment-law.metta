@@ -1,7 +1,7 @@
 (: and-annulment (-> Atom Atom))
 (: or-annulment (-> Atom Atom))
 
-; AND Annulment Law with recursion and case
+; AND Annulment Law 
 (= (and-annulment $expr)
    (case $expr
      ( ((AND $A false) false)
@@ -12,7 +12,7 @@
    )
 )
 
-; OR Annulment Law with recursion and case
+; OR Annulment Law 
 (= (or-annulment $expr)
    (case $expr
      ( ((OR $A true) true)
@@ -23,7 +23,7 @@
    )
 )
 
-; Simplify expressions by applying both and-annulment and or-annulment recursively
+; Simplify expressions
 (: simplify (-> Atom Atom))
 (= (simplify $expr)
    (case $expr

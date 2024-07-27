@@ -1,6 +1,6 @@
 (: commutative-law (-> Atom Atom))
 
-; Recursive application of the Commutative Law
+
 (= (commutative-law $expr)
    (case $expr
      ; Apply Commutative Law for AND
